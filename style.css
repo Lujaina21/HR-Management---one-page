@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -22,7 +22,7 @@
     --container-color: ;
 
     /*========== Font and typography ==========*/
-    --body-font: ;
+    --body-font: "Poppins", sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: ;
@@ -34,8 +34,9 @@
     --smaller-font-size: ;
 
     /*========== Font weight ==========*/
-    --font-medium: ;
-    --font-semi-bold: ;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold:700;
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -69,24 +70,109 @@ body{
     /* font-size: ;
     background-color:; */
 }
-h1,h2,h3,h4{
-    /* color: ;
-    font-weight:; */
-}
+
 ul{
     list-style: none;
 }
 a{
     text-decoration: none;
 }
-img{
+/* img{
     max-width: 100%;
     height: auto;
+} */
+
+/**************************NAV**********************/
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left:6rem;
+    padding-right: 18px;
+    padding-bottom:9px;
+    margin:1px;
+    color:white;
 }
 
+.navitem {
+    margin-left: 27px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    margin-right: 15px;
+  }
 
+ nav {
+    width: 100%;
+     height: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /* position: fixed;
+       background-color:var(--first-color); */
+      background-color: transparent; 
+     padding: 8px;
+ }
 
+ .nav_center {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    margin-left: 3px;
+    margin-right: 10px;
+    max-width: 100%;
+    /* position: fixed; */
+}
 
+.logo {
+width: 98px;
+margin-right: 20px;
+border-radius: 20px;
+float: left;
+cursor: pointer;
+}
+
+.support {
+    font-size: 14px;
+    padding-left: 40px;
+}
+
+.support a {
+    font-weight:bold;
+    color: white; 
+}
+
+.support span {
+    color: #5c8ed0;
+    display: block;
+}
+
+.nav_try {
+    margin-right: 12px;
+    border-color: #5c8ed0;
+    margin-left: 35px;
+}
+
+.nav_try:hover {
+    background-color: black;
+    border-style: none;
+}
+
+/****BUTTONS*******/
+.btn {
+    color: white;
+    font-weight: var(--font-bold);
+    padding: 11px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    border:0.6px solid #5c8ed0;
+    width:150px;
+    height:70px;
+    transition: 0.3s all ease-in-out;
+}
 
 
 
