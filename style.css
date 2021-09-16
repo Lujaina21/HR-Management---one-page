@@ -107,6 +107,10 @@ a{
 
 /**************************NAV**********************/
 
+.first {
+    background: linear-gradient(-90deg, #227df8 0%, #0054c4 100%);
+}
+
 .nav_links {
     display: flex;
     align-items: center;
