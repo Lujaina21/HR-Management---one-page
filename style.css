@@ -718,16 +718,7 @@ margin-bottom: 40px;
   position: absolute;
   background-image: url(../images/dot-s.png);
 }
-/* .feature_section .feature_content .container .row:not(:last-of-type::after) {
-  z-index: -1;
-    content: "";
-    left: -140px;
-    width: 1450px;
-    height: 685px;
-    bottom: -400px;
-    position: absolute;
-    background-image:none;
-} */
+
 .feature_section .container .feature_process .row {
   display: flex;
   flex-wrap: wrap;
@@ -1115,7 +1106,7 @@ animation-name:fadeFromRight;
 
 /*  =================== The End of The Key frames of the website ============= */
 
-/*======================== The Start of Responsive of the Website =========== */
+/*======================== The Start of Responsive of Feature and Intregation =========== */
 
 @media only screen and (max-width: 1280px) {
   .container {
@@ -1436,13 +1427,231 @@ animation-name:fadeFromRight;
   }
 }
 
-/*======================== The End of Responsive of the Website =========== */
+/*==================================================== The End of Responsive of feature and Intregation ================================== */
+
+
+
+
+
+  /* ======================================================== The start of testimaniol section================================================= */
+
+
+.testmon{
+  padding:100px 0 60px ;
+  background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.625;
+  font-family: "Roboto", sans-serif;
+
+}
+.testmon .testmon_image{
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  text-align: center;
+  position: absolute;
+}
+.testmon .container .row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.testmon .container .row .wow{
+  visibility: visible;
+  animation-duration: 1500ms;
+  animation-delay: 0ms;
+  animation-name:fadeInLeft ; 
+  max-width: calc(100% / 3  );  
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 1;
+  width: 100%;
+}
+.testmon .container .row .wow .testmon_box{
+  padding: 30px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgb(0 51 120 / 3%);
+
+}
+.testmon .container .row .wow .testmon_box:nth-child(2){
+  transform: translateX(-40px);
+}
+.testmon .container .row .wow .testmon_box .testmon_text{
+color: #6480a7;
+    font-size: 16px;
+    font-weight: 400;
+}
+.testmon .container .row .wow .testmon_box .testmon_author{
+  margin-top: 18px;
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_img{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_img img{
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  height: auto;
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_text h3 {
+  color: #003378;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+  text-align: left;
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_text ul{
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 3px;
+
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_text ul li {
+  list-style: none;
+  line-height: 0.5;
+  display: inline-block;
+
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_text ul li a {
+  color: #fbb040;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.testmon .container .row .wow .testmon_box .testmon_author .testmon_author_text ul li a i {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+.testmon .container .row .wow:nth-child(2){
+  animation-name:fadeFromUp ;
+}
+.testmon .container .row .wow .wow_text{
+padding-top: 150px;
+position: relative;
+}
+
+.testmon .container .row .wow .wow_text .wow_text_headline {
+text-align: center;
+}
+.testmon .container .row .wow .wow_text .wow_text_headline .wow_text_title_tag{
+  color: #0e65d9;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 20px 5px;
+  display: inline-flex;
+  background-color: #f3f7ff;
+  text-align: center;
+}
+.testmon .container .row .wow .wow_text .wow_text_headline h2{
+  font-size: 36px;
+  padding-top: 15px;
+  font-weight: 600;
+  color: #003378;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+  text-align: center;
+
+}
+.testmon .container .row .wow .testmon_box.four{
+transform: translateX(40px);
+}
 
 
 
 
 
 
+/*  =================== The start of The Key frames of the Testimansial ============= */
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  =================== The End of The Key frames of the  Testimansial ============= */
+
+/*======================== The Start of Responsive of section Testimonials =========== */
+
+@media only Screen and (max-width: 700px){
+.container{
+   max-width: 540px;
+}
+.testmon .container .row {
+    
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.testmon .container .row .wow{
+  width: 100%;
+  max-width: 100%;
+}
+.testmon .container .row .wow .testmon_box:nth-child(2) {
+    transform: translateX(0);
+}
+.testmon .container .row .wow .wow_text {
+    padding-top: 0px;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+}
+
+
+@media only screen and (max-width: 992px){
+  
+.testmon .container .row .wow .testmon_box:nth-child(2) {
+    transform: translateX(0);
+}
+}
+
+/*======================== The End of Responsive of section Testimonials =========== */
+
+
+  /* ======================================================== The End of testimaniol section ========================================================= */
 
 
 
