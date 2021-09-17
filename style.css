@@ -360,6 +360,7 @@ margin-bottom: 40px;
     padding:17px;
     filter:grayscale(100%);
     transition: 0.3s all ease-in-out;
+    cursor:pointer;
 }
 
 .loogoo:hover {
