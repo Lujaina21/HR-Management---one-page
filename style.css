@@ -4,38 +4,6 @@
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height:3rem ;
-
-    /*========== Colors ==========*/
-    /* Change favorite color */
-   --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-
-    --first-color:black ;
-    --first-color-second:#6480A7 ;
-    --first-color-alt:#003378 ;
-
-    :root {
-    --header-height:3rem ;
-
     /*========== Colors ==========*/
     /* Change favorite color */
     --blue: #007bff;
@@ -63,35 +31,41 @@
     --warning: #ffc107;
     --danger: #dc3545;
     --light2: #f9f9f6;
-    --dark: #343a40;
-
+    --first-color:black ;
+    --first-color-second:#6480A7 ;
     /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+    /* --body2-font:"Circular Std Book"; */
+    --biggest-font-size: 2.25rem;
+    --biggest2-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --p-size:1.2rem ;
 
-        --body-font: "Circular Std Book";
-        --body2-font:"Poppins";
-        --biggest-font-size: 2.25rem;
-        --biggest2-font-size: 2.5rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1rem;
-        --normal-font-size: .938rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
-        --p-size:1.2rem ;
-    
-        /*========== Font weight ==========*/
-        --font-medium: 500;
-        --font-semi-bold: 600;
-        --font-bold:700;
-    
-        /*========== Margenes ==========*/
-        --mb-1: .5rem;
-        --mb-2: 1rem;
-        --mb-3: 1.5rem;
-        --mb-4: 2rem;
-        --mb-5: 2.5rem;
-        --mb-6: 3rem;
-    
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: ;
+    --h1-font-size: ;
+    --h2-font-size: ;
+    --h3-font-size: ;
+    --normal-font-size: ;
+    --small-font-size: ;
+    --smaller-font-size: ;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold:600 ;
+    --font-bold:700;
+    /*========== Margenes ==========*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
 
     /*========== z index ==========*/
     --z-tooltip: ;
@@ -117,27 +91,13 @@ body {
     font-family: var(--body-font);
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 ul {
     list-style: none;
 }
 
-a {
+ a {
     text-decoration: none;
-}
-
-/* img{
-    max-width: 100%;
-    height: auto;
-} */
+} 
 
 /**************************NAV**************/
 
