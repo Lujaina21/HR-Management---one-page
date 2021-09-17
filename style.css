@@ -314,6 +314,7 @@ margin-bottom: 40px;
     align-items: center;
     background-color: white;
     padding-left: 30px;
+    z-index:1;
 }
 
 .loogoo {
