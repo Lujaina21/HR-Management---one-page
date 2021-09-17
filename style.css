@@ -33,45 +33,65 @@
     --first-color-second:#6480A7 ;
     --first-color-alt:#003378 ;
 
-    /* HSL color mode */
-    --first-color: ;
-    --first-color-second: ;
-    --first-color-alt: ;
-    --first-color-lighter: ;
-    --title-color: ;
-    --text-color: ;
-    --text-color-light: ;
-    --input-color: ;
-    --body-color: ;
-    --container-color: ;
+    :root {
+    --header-height:3rem ;
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --blue: #007bff;
+    --dark-blue:#003378;
+    --light:#f3f7ff;
+    --font-btn:#0e65d9;
+    --p-light:#6681a8;
+    --main:#213d78;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light2: #f9f9f6;
+    --dark: #343a40;
 
     /*========== Font and typography ==========*/
-    --body-font: "Poppins", sans-serif;
 
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: ;
-    --h1-font-size: ;
-    --h2-font-size: ;
-    --h3-font-size: ;
-    --normal-font-size: ;
-    --small-font-size: ;
-    --smaller-font-size: ;
-
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    --font-bold:700;
-
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-    --mb-0-25: ;
-    --mb-0-5: ;
-    --mb-0-75: ;
-    --mb-1: ;
-    --mb-1-5: ;
-    --mb-2: ;
-    --mb-2-5: ;
-    --mb-3: ;
+        --body-font: "Circular Std Book";
+        --body2-font:"Poppins";
+        --biggest-font-size: 2.25rem;
+        --biggest2-font-size: 2.5rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+        --p-size:1.2rem ;
+    
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+        --font-bold:700;
+    
+        /*========== Margenes ==========*/
+        --mb-1: .5rem;
+        --mb-2: 1rem;
+        --mb-3: 1.5rem;
+        --mb-4: 2rem;
+        --mb-5: 2.5rem;
+        --mb-6: 3rem;
+    
 
     /*========== z index ==========*/
     --z-tooltip: ;
@@ -359,6 +379,126 @@ margin-bottom: 40px;
     height:70px;
     transition: 0.3s all ease-in-out;
 }
+/*===== start of feauter section =======*/
+.feature{
+    z-index: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 100px ;
+    width: 100%;
+    height: 100vh;
+    transition: .5s;
+    background-color: var(--light2);
+}
+.feature .a1{
+    margin-top: 40px;
+    width: 140px;
+    height: 33px;
+    background-color: var(--light);
+    color: var(--font-btn);
+    font-size: var(--mb-2);
+    font-weight: var(--font-bold);
+    font-family: var(--body2-font);
+    padding: 10px;
+    margin-left: 45%;
+    
+    text-align: center;
+}
+.feature h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--biggest2-font-size);
+    font-weight: var(--font-semi-bold);
+    color:var(--main) ;
+    font-family: var(--body2-font);
+}
+
+.row{
+    position: relative;
+    display: flex;
+    padding: 50px;
+    margin: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col {
+    margin-right: 10px;
+    transition: .5s;
+    padding: 40px;
+    flex-basis: 32%;
+    position: relative;
+    height: 450px;
+    border: 2px solid #eef2f7;
+    background-color: #fbfbfb;
+    
+}
+.col:hover{
+    border: 1px solid var(--light2);
+}
+.left{
+    position: relative;    
+    
+}
+.imgBox{
+    margin-top: 15px;
+    position:absolute;
+    top:0;
+    left: 0;
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+    width: 55px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.title {
+    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    margin-left: 40px;
+    right: 1;
+    text-align: center;
+    float: right;
+
+}
+.title h2{
+    margin-top: 30px;
+    color:var(--main) ;
+    font-size: var(--mb-2);
+    font-family: var(--body2-font);
+}
+.title p {
+    color:var(--p-light);
+    margin-top: 10px;
+    margin-bottom: 25px;
+    }
+hr{
+    align-content: center;
+    width: 250px;
+    opacity: .7;
+    margin-top: 80px;
+    margin-bottom: 30px;
+
+}
+.features{
+    position: relative;
+    padding: 40px;
+
+    
+}
+.feauters ul li{
+    padding-bottom: 40px;
+    color:var(--p-light);
+    line-height:10px;
+    font-size: 15px;
+    font-family: var(--body2-font);
+    
+}
+
+/*===== end of feauter section =======*/
 
 /* ========================= Start of Intregation Section ========================  */
 
@@ -1692,6 +1832,254 @@ transform: translateX(40px);
 
 
   /* ======================================================== The End of testimaniol section ========================================================= */
+    
+/* ============start of blog section ========= */
+.blog{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+}
+.blog .ab{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 66px;
+    height: 30px;
+    padding: 10px;
+    background-color: var(--light);
+    color: var(--font-btn);
+    font-size: var(--mb-2);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body2-font);
+
+}
+.blog .hb {
+    margin-top: 25px;
+    margin-left: 45px;
+    color: var(--dark-blue);
+    font-size: var(--mb-5);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body2-font);
+}
+.row2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col2 {
+    margin-right: 10px;
+    transition: .5s;
+    padding: 40px;
+    position: relative;
+}
+.double{
+    display: inline-block;
+}
+.double img{
+    width: 250px;
+    margin-right: 20px;
+}
+.content1{
+    margin-top:35px;
+    width: 350px;
+    position: relative;
+    height: 280px;
+    box-shadow: 2px 2px 5px #ededed;
+    
+}
+.content1 .blog-meta {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.title-tag  {
+    width: 125px;
+    height: 28px;
+    background-color: var(--light);
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.title-tag a{
+    color: var(--font-btn);
+    font-size: 15px;
+    font-weight: var(--font-medium);
+    font-family: var(--body2-font);
+}
+.date-meta{
+    width: 140px;
+    height: 35px;
+    background-color: #fff;
+}
+.date-meta a{
+    color: var(--gray);
+}
+.headline{
+    margin-top: 30px;
+    position: relative;
+    line-height: 1.5rem;
+    width: 100%;
+    
+}
+.headline h3 a{
+    color: var(--dark-blue);
+    font-weight: var(--font-bold);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.headline p{
+    margin-top: 30px;
+    color: #6480a7;
+    font-size: 20px;
+    font-family: var(--body-font);
+    opacity: .8;
+    letter-spacing: .5px;
+    object-fit:contain;
+}
+/*==== responsive area ==== */
+
+
+
+
+/*=========end of blog section =========== */
+/*====== Start of call to action  section ==========*/
+.call-to-action{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    align-items: center;
+}
+.call-to-action .container{
+    position: relative;
+    height:550px;
+    width: 1166px;
+    padding: 70px;
+    background-color: #0e65da;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.call-action-content{
+    padding: 40px;
+    position: relative;
+    z-index: 1000;
+
+}
+.section-title{
+    display: block;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+.section-title .title-tag {
+    width: 125px;
+    height: 35px;
+    color: #fff;
+    background-color: #337de0;
+    font-family: var(--body2-font);
+    font-weight: var(--font-semi-bold);
+    letter-spacing: .5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.section-title h2{
+    margin-top: 15px;
+    color: #fff;
+    font-size: 35px;
+    font-family: var(--body2-font);
+}
+.para{
+    text-align: center;
+    color: #adcaf8;
+    font-size: var(--p-size);
+    line-height: 2rem;
+    opacity: .9;
+    margin-left: 20px;
+    font-family: var(--body2-font);
+
+}
+.call-action-btn{
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.call-action-btn .ca{
+    width: 250px;
+    height: 65px;
+    background-color: #003378;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-family: var(--body2-font);
+    font-weight: 600;
+    margin-right: 18px;
+}
+.call-action-btn .ca2{
+    width: 220;
+    height: 50px;
+    filter: blur();
+    border:  1px solid #adcaf8;
+    color: #fff;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-family: var(--body2-font);
+    font-weight: 600;
+}
+.call-action-btn .ca:hover{
+    background-color: #111;
+    transition: .5s;
+}
+.call-action-btn .ca2:hover{
+    background-color: #111;
+    border: 1px solid #111;
+    transition: .5s;
+}
+.call-to-action-wrapper{
+    position: relative;
+    z-index: 0;
+}
+.banner-shape1 {
+    position: relative;
+    float: left;
+}
+
+.banner-shape2 {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: -70px;
+}
+
+.banner-shape4 {
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+    margin-right: -54px;
+}
+
+.banner-shape3 {
+    vertical-align: middle;
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+    position: relative;
+}
+/* ====responsive area ==== */
+
+/*==========end of call to action  section========*/
 
 
 
