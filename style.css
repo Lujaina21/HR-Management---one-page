@@ -34,8 +34,8 @@
     --first-color:black ;
     --first-color-second:#6480A7 ;
     /*========== Font and typography ==========*/
-    --body-font: "Poppins", sans-serif;
-    /* --body2-font:"Circular Std Book"; */
+    --body2-font: "Poppins", sans-serif;
+     --body-font:"Circular Std Book";
     --biggest-font-size: 2.25rem;
     --biggest2-font-size: 2.5rem;
     --h1-font-size: 1.5rem;
@@ -88,7 +88,7 @@ html {
 
 body {
     margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
+    font-family:"Poppins", sans-serif;
 }
 
 ul {
@@ -105,7 +105,7 @@ ul {
     background: linear-gradient(-90deg, #227df8 0%, #0054c4 100%);
     position: relative;
     height:145vh;
-     font-family: var(--body-font);
+     font-family: "Poppins", sans-serif;
 }
 
 .nav_links {
