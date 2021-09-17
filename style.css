@@ -95,8 +95,6 @@ html {
 body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
-    /* font-size: ;
-    background-color:; */
 }
 
 .container {
