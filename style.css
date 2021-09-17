@@ -125,6 +125,7 @@ a {
     background: linear-gradient(-90deg, #227df8 0%, #0054c4 100%);
     position: relative;
     height:145vh;
+     font-family: var(--body-font);
 }
 
 .nav_links {
