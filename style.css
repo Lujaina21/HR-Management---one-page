@@ -83,32 +83,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     /* font-size: ;
     background-color:; */
 }
 
-ul{
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* img{
     max-width: 100%;
     height: auto;
 } */
 
-/**************************NAV**********************/
+/**************************NAV**************/
 
 .first {
     background: linear-gradient(-90deg, #227df8 0%, #0054c4 100%);
+    position: relative;
+    height:145vh;
 }
 
 .nav_links {
@@ -128,9 +145,34 @@ a{
     font-weight: bold;
     font-size: 17px;
     margin-right: 15px;
+    position: relative;
   }
 
- nav {
+  .navitem:checked {
+    color:white;
+}
+
+.navitem a:before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+  	transform: scaleX(0);
+    -webkit-transition: all 0.5s ease-in-out 0s;
+  	transition: all 0.6s ease-in-out 0s;
+  }
+
+  .navitem a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1.1);
+  }
+
+  nav {
     width: 100%;
      height: 80px;
      display: flex;
@@ -187,6 +229,124 @@ cursor: pointer;
     border-style: none;
 }
 
+/***********************************************banner*********************************/
+
+.banner_section {
+    height: 100vh;
+}
+
+.banner_textcontainer {
+    margin-top: 240px;
+    margin-left:90px;
+    color:white;
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+.banner_text {
+    background-color: rgba(255, 255, 255, 0.102);
+font-size: 13px;
+padding:5px 10px 5px 10px;
+margin-bottom: 15px;
+font-weight: var(--font-bold);
+}
+
+.banner_title {
+ font-size: 40px;
+ margin-top: 15px;
+ margin-bottom: 12px;
+}
+
+.banner_subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.banner_btn {
+    background-color: #003378;
+    font-weight: var(--font-bold);
+    padding: 11px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    border-style:none;
+    width:172px;
+    height:70px;
+    transition: 0.3s all ease-in-out;
+    color:white;
+}
+
+.banner_btn:hover {
+    background-color: black;
+   border-style: none;
+}
+
+.imgs {
+    padding:20px;
+}
+
+.bsh1 {
+    position: relative;
+    margin-top: 90px;
+    float: left;
+    margin-left: 96px;
+}
+
+.bsh2 {
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    margin-left: -50px;
+}
+
+.bsh4 {
+    vertical-align: middle;
+    float: right;
+   margin-top: 60px;
+   position: relative;
+   margin-right: -64px;
+}
+
+.bsh3 {
+    vertical-align: middle;
+    float: right;
+    margin-right: 60px;
+   margin-top: 10px;
+  position: relative;
+}
+
+.banner_img {
+width:70px;
+position: absolute;
+margin-left:645px;
+margin-top:170px;
+margin-bottom: 40px;
+}
+
+.logos {
+    position: absolute;
+    margin-left: 230px;
+    margin-right: 30px;
+    margin-top: -80px;
+    width:993px;
+    height:132px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-left: 30px;
+}
+
+.loogoo {
+    padding:17px;
+    filter:grayscale(100%);
+    transition: 0.3s all ease-in-out;
+}
+
+.loogoo:hover {
+    filter:grayscale(0%);
+}
+
 /****BUTTONS*******/
 .btn {
     color: white;
@@ -199,47 +359,6 @@ cursor: pointer;
     width:150px;
     height:70px;
     transition: 0.3s all ease-in-out;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*======================= Golobal Rules =====================  */
-* {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ========================= Start of Intregation Section ========================  */
