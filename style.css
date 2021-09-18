@@ -200,6 +200,21 @@ cursor: pointer;
     background-color: black;
     border-style: none;
 }
+    
+    /* .navbar-fixed-top.scrolled {
+  background-color: black !important;
+  transition: 0.1s linear;
+}
+
+.shrink {
+  padding:20px 10px;
+  position: fixed;
+top:0;
+width: 100%;
+transition: 0.3s all linear;
+opacity: 0.95;
+padding: 12px;
+} */
 
 /***********************************************banner*********************************/
 
