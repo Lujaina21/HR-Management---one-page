@@ -8,13 +8,6 @@ var nav = document.getElementById('nav');
          }
       }
 
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $(".navbar-fixed-top");
-          $nav.toggleClass('scrolled', $(this).scrollTop() > 100);
-        });
-      });
-
 // const counters = document.querySelectorAll('autocount');
 // const speed = 200;
 
