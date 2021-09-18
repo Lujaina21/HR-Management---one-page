@@ -208,7 +208,6 @@ cursor: pointer;
 top:0;
 width: 100%;
 transition: 0.3s all linear;
-opacity: 0.95;
 padding: 12px;
     background-color: black;
     z-index:100;
