@@ -1803,7 +1803,149 @@ transform: translateX(40px);
   /* ======================================================== The End of testimaniol section ========================================================= */
     
 /* ============start of blog section ========= */
-.blog{
+    
+    
+    
+    
+    
+    
+.blog {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 100vh; */
+  padding-top: 150px;
+}
+.blog .ab {
+  margin-top: 20px;
+  /* margin-left: 50px; */
+  width: 66px;
+  height: 30px;
+  padding: 10px;
+  background-color: var(--light);
+  color: var(--font-btn);
+  font-size: var(--mb-2);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--body2-font);
+}
+.blog .hb {
+  margin-top: 25px;
+  /* margin-left: 45px; */
+  color: var(--dark-blue);
+  font-size: var(--mb-5);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--body2-font);
+}
+.row2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* align-items: flex-start; */
+  /* justify-content: space-between;*/
+}
+.col2 {
+  margin-right: 0;
+  transition: 0.5s;
+  /* padding: 40px; */
+  position: relative;
+}
+.double {
+  display: inline-block;
+}
+.double img {
+  width: 250px;
+  margin-right: 20px;
+}
+.content1 {
+  /* margin-top: 35px; */
+  width: 314px;
+  position: relative;
+  height: 260px;
+  box-shadow: 2px 2px 5px #ededed;
+  padding-top: 40px;
+}
+.content1 .blog-meta {
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-tag {
+  width: 125px;
+  height: 28px;
+  background-color: var(--light);
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+.title-tag a {
+  color: var(--font-btn);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+.date-meta {
+  width: 140px;
+  height: 35px;
+  background-color: #fff;
+}
+.date-meta a {
+  color: #9db0cb;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 700;
+}
+.headline {
+  margin-top: 30px;
+  position: relative;
+  line-height: 1.5rem;
+  width: 100%;
+}
+.headline h3 a {
+  color: var(--dark-blue);
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.headline p {
+  margin-top: 30px;
+  color: #6480a7;
+  /* font-size: 16px; */
+  font-family: var(--body-font);
+  object-fit: contain;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*      The old Section  */
+    
+    
+/* .blog{
     position: relative;
     justify-content: center;
     align-items: center;
@@ -1911,7 +2053,7 @@ transform: translateX(40px);
     opacity: .8;
     letter-spacing: .5px;
     object-fit:contain;
-}
+} */
 /*==== responsive area ==== */
 
 
@@ -1919,7 +2061,279 @@ transform: translateX(40px);
 
 /*=========end of blog section =========== */
 /*====== Start of call to action  section ==========*/
-.call-to-action{
+    
+    
+    
+    
+    
+  .call-to-action {
+  position: relative;
+  /* height: 100vh; */
+  width: 100%;
+  /* padding: 100px; */
+  align-items: center;
+  padding-top: 85px;
+}
+.call-to-action .container {
+  position: relative;
+  height: 550px;
+  width: 1166px;
+  padding: 70px;
+  background-color: #0e65da;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-action-content {
+  padding: 40px;
+  position: relative;
+  z-index: 1000;
+}
+.section-title {
+  display: block;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+}
+.section-title .title-tag {
+  width: 125px;
+  height: 35px;
+  color: #fff;
+  background-color: #337de0;
+  font-family: "Roboto";
+  font-weight: 700;
+  /* letter-spacing: .5px; */
+  /* font-size: 15px; */
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 8px 20px 5px;
+}
+.section-title h2 {
+  /* margin-top: 15px; */
+  padding-top: 25px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.para {
+  text-align: center;
+  color: #adcaf8;
+  font-size: 18px;
+  line-height: 2rem;
+  opacity: 0.9;
+  margin-left: 20px;
+
+  padding-top: 0;
+  line-height: 1.625;
+  font-family: "Roboto";
+}
+.call-action-btn {
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+}
+.call-action-btn .ca {
+  /* width: 200px;
+    height: 65px;
+    background-color: #003378;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    font-family: var(--body2-font);
+    font-weight: 700;
+    margin-right: 16px; */
+
+  width: 200px;
+  height: 65px;
+  background-color: #003378;
+  color: #fff;
+  /* padding: 24px; */
+  font-size: 16px;
+  font-family: var(--body2-font);
+  font-weight: 700;
+  margin-right: 16px;
+  display: inline-block;
+  line-height: 66px;
+}
+.call-action-btn .ca2 {
+  width: 160px;
+  height: 65px;
+  filter: blur();
+  border: 1px solid #adcaf8;
+  color: #fff;
+  /* padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px; */
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 64px;
+}
+.call-action-btn .ca:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.call-action-btn .ca2:hover {
+  background-color: #111;
+  border: 1px solid #111;
+  transition: 0.5s;
+}
+.call-to-action-wrapper {
+  position: relative;
+  z-index: 0;
+}
+.banner-shape1 {
+  /* position: relative; */
+  position: absolute;
+
+  float: left;
+}
+
+.banner-shape2 {
+  /* position: relative; */
+  position: absolute;
+
+  float: left;
+  margin-top: 15px;
+  margin-left: -70px;
+}
+
+.banner-shape4 {
+  vertical-align: middle;
+  float: right;
+  /* position: relative; */
+  position: absolute;
+
+  margin-top: 5px;
+  margin-right: -54px;
+}
+
+.banner-shape3 {
+  vertical-align: middle;
+  float: right;
+  margin-right: 40px;
+  margin-top: 30px;
+  /* position: relative; */
+  position: absolute;
+}
+/* ====Start  responsive area ==== */
+
+@media only screen and (max-width: 1292px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (max-width: 792px) {
+  .container {
+    max-width: 700px;
+  }
+  .call-to-action .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: #0e65da;
+    overflow: hidden;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .content1 {
+    /* margin-top: 35px; */
+    width: 285px;
+    position: relative;
+    height: 260px;
+    box-shadow: 2px 2px 5px #ededed;
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 592px) {
+  .container {
+    max-width: 500px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+  }
+
+  .call-action-content {
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+  }
+  .call-to-action .container {
+    position: relative;
+    width: 500px;
+    padding: 70px;
+    /* height: 0; */
+    /* width: 0; */
+    /* padding: 65px; */
+    /* background-color: #0e65da;  */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .call-action-btn {
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+  }
+  .section-title {
+    display: block;
+    padding: 0;
+    /* align-items: center; */
+    text-align: center;
+    z-index: 1000;
+  }
+}
+
+/* ==== End responsive area ==== */
+
+/*==========end of call to action  section========*/
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*     The old Section  */
+    
+/* .call-to-action{
     position: relative;
     height: 100vh;
     width: 100%;
@@ -2046,7 +2460,7 @@ transform: translateX(40px);
     margin-right: 40px;
     margin-top: 30px;
     position: relative;
-}
+} */
 /* ====responsive area ==== */
 
 /*==========end of call to action  section========*/
