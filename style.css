@@ -2540,7 +2540,14 @@ font-size: 15px;
     color: #6480a7;
     background-color: #fff;
     padding:15px;
+     transition: 0.3s all ease-in-out;
 }
+    .pm-footer-social a:hover{
+    background-color:#0e65da ;
+    transition: 0.3s all ease-in-out;
+    color:#fff;
+}
+
 .pm-footer-menu-widget{
     position: relative;
     text-align: center;
@@ -2575,6 +2582,9 @@ font-size: 15px;
     font-weight: var(--font-medium);
     font-size: var(--mb-2);
 }
+    .pm-footer-menu-widget a:hover,.menu-widget a:hover{
+    color: #111;
+}
 
 .footer-content{
     margin-top: 50px;
@@ -2592,6 +2602,9 @@ font-size: 15px;
     font-family: var(--body2-font);
     font-weight: var(--font-semi-bold);
     font-size: var(--mb-2);
+}
+    .footer-content .pm-copyright-content a:hover{
+    color:#111
 }
 .up{
     float: right;
