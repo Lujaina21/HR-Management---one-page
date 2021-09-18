@@ -33,37 +33,3 @@ var nav = document.getElementById('nav');
 //         }
 //     }
 // })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var count = 0; // declaring "count" here makes the variable globally available
-
-// function lemath()
-// {    
-//     // count++;
-//     var stuff = document.getElementById('stuff');
-//     stuff.innerHTML = count;
-// }
-
-// function begin()
-// {
-//     lemath();
-//     setTimeout(begin, 1000, window);
-// }
-
-// document.addEventListener('DOMContentLoaded', function () {    
-//     begin();
-// });
